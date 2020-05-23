@@ -1,0 +1,169 @@
+
+*{
+    box-sizing: border-box;
+}
+/* Navbar */
+.navbar-brand {
+    font-family: viga;
+    font-size: 32px;
+}
+.nav-link{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(../img/Jumb2.png);
+    background-size: cover; /* spy penuh gambarnya*/
+    height: 437px;
+}
+
+.jumbotron .display-4 {
+    color: red;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 250;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 65px;
+    font-family:'Pacifico', cursive;
+
+}
+
+/* Info Panel */
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 30px;
+    background-color: white;
+    padding: 30px;
+}
+
+.info-panel img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #acacac;
+    margin-top: -5;
+    font-weight: 200;
+}
+
+/* workingspace */
+.workingspace {
+    margin-top: 60px;
+}
+
+.workingspace h3 {
+    font-size: 48px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.workingspace p {
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+}
+
+/* info */
+.info {
+    margin-top: 25px;
+}
+.card {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.card h4 {
+    font-weight: 400;
+}
+.card h3{
+    font-weight: 700;
+}
+.card p {
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+footer {
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+
+footer p>span {
+    color: #f7be16;
+}
+
+footer input {
+    border: none !important;
+}
+
+footer input::placeholder {
+    color: white !important;
+}
+
+footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none;
+}
+
+footer .column i {
+    color: #dd2476;
+}
+.span{
+    color: #f7be16;
+}
+
+
+
+
+/* Utility */
+.tombol {
+    text-transform: uppercase ;
+    border-radius: 40px; /* supaya tombol tak terlalu lancip*/
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+
+    .navbar-brand, .nav-link {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+    
+     .nav-link {
+        text-transform: uppercase; /* supaya besar semua*/
+        margin-right: 25px; /* jarak antar tulisan navbar*/
+    }
+    
+    .nav-link:hover::after { /*  spy ketika disorot ada hover nya dibawah*/
+        content: '';
+        display: block;
+        border-bottom: 3px solid 	#FF0000;
+        width: 50%; /*kl ada afternya tambahkan width*/
+        margin: auto;
+        padding-bottom: 5px; /* spy ada jarak padding dibawah tuilsan*/
+        margin-bottom: -8px; /* spy ketika disorot tulisan tak terlalu turun, hasil (-8 ) krn hasil 5px + 3px*/
+    }
+}

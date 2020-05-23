@@ -1,0 +1,127 @@
+/* Navbar */
+.navbar-brand {
+    font-family: viga;
+    font-size: 32px;
+}
+.nav-link{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+
+.main {
+    margin-top: 50px;
+    margin-bottom: 250px;
+}
+
+
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+
+    .navbar-brand, .nav-link {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+    
+     .nav-link {
+        text-transform: uppercase; /* supaya besar semua*/
+        margin-right: 25px; /* jarak antar tulisan navbar*/
+    }
+    
+    .nav-link:hover::after { /*  spy ketika disorot ada hover nya dibawah*/
+        content: '';
+        display: block;
+        border-bottom: 3px solid 	#FF0000;
+        width: 50%; /*kl ada afternya tambahkan width*/
+        margin: auto;
+        padding-bottom: 5px; /* spy ada jarak padding dibawah tuilsan*/
+        margin-bottom: -8px; /* spy ketika disorot tulisan tak terlalu turun, hasil (-8 ) krn hasil 5px + 3px*/
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../img/a.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: cursive;
+}
+.about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 270px;
+    box-shadow: 0 0 10px 5px black;
+}
+.avatar{
+    font-size: 50px;
+    background: #bdc3c7;
+    width: 80px;
+    height: 80px;
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    color: #2c3e50;
+}
+
+.about h2{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    letter-spacing: 5px;
+}
+.about p{
+    color: white;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.box-login{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    padding: 8px 0;
+}
+ .box-login i {
+     font-size: 20px;
+     color: white;
+ }
+ .box-login input{
+     width: 100%;
+     padding: 0 10px;
+     background: none;
+     border: none;
+     outline: none;
+     color: white;
+     font-size: 18px;
+ }
+
+.box-login input::placeholder{
+    color: white;
+}
+
+.about img{
+    width: 200px;
+    margin-left: 15px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: left;
+}
+
+.bottom a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}

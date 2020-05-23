@@ -1,0 +1,50 @@
+.img img {
+    width: 500px;
+
+}
+.info h1{
+    
+    font-weight: bold;
+    font-size: 60px;
+    text-transform: uppercase;
+    
+}
+
+.img{
+    margin-top: 15px;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: viga;
+    font-size: 32px;
+}
+.nav-link{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+
+
+
+/* DEKSTOP VERSION */
+@media (min-width: 992px) {
+
+    .navbar-brand, .nav-link {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+    
+     .nav-link {
+        text-transform: uppercase; /* supaya besar semua*/
+        margin-right: 25px; /* jarak antar tulisan navbar*/
+    }
+    
+    .nav-link:hover::after { /*  spy ketika disorot ada hover nya dibawah*/
+        content: '';
+        display: block;
+        border-bottom: 3px solid 	#FF0000;
+        width: 50%; /*kl ada afternya tambahkan width*/
+        margin: auto;
+        padding-bottom: 5px; /* spy ada jarak padding dibawah tuilsan*/
+        margin-bottom: -8px; /* spy ketika disorot tulisan tak terlalu turun, hasil (-8 ) krn hasil 5px + 3px*/
+    }
+}
